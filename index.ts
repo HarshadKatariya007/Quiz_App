@@ -19,6 +19,10 @@ APP.get("/index",(req:Request,res:Response) =>
     res.sendFile(__dirname+"/index.html")
 })
 
+APP.get("/quiz",(req:Request,res:Response) =>
+{
+    res.sendFile(__dirname + "/Question.html")
+})
 
 APP.post("/add",valid_check, async (req:Request,res:Response) =>
 {
