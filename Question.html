@@ -68,6 +68,11 @@
                     })
                     return
                 }
+                setInterval(() =>
+                {
+                    window.location.reload()
+                },2000)
+                
             })
 
             document.querySelector("#data_show").append(h5, ans_1, ans_2, ans_3, ans_4, input, submit)
